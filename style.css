@@ -1,0 +1,23 @@
+img {
+    width: 300px;
+    height: 400px
+    border-radius 15px;
+    display: block;
+    margin: 0 auto;
+}
+h1 {text-align: center
+    ;}
+    
+    
+body {background-color: beige
+    ;}
+    h1 {color: #3e3028;} 
+
+    h3{text-align: center;
+        width: 100%;
+    }
+
+.centerd{
+    width: 100%;
+    display: flex; 
+justify-content: space-around;}
