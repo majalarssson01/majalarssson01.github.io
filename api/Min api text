@@ -1,0 +1,8 @@
+KGAT_71a49b2432a240968db032101a7e4b30
+
+
+curl -H "Authorization: Bearer KGAT_71a49b2432a240968db032101a7e4b30" "https://www.kaggle.com/api/v1/competitions/list"
+
+curl -i -H "Authorization: Bearer KGAT_71a49b2432a240968db032101a7e4b30" "https://www.kaggle.com/api/v1/datasets/view/rodsaldanha/arketing-campaign"
+
+curl -L -H "Authorization: Bearer KGAT_71a49b2432a240968db032101a7e4b30" -o marketing_campaign.csv "https://www.kaggle.com/api/v1/datasets/download/rodsaldanha/arketing-campaign/marketing_campaign.csv"
