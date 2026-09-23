@@ -423,3 +423,108 @@ footer p {
   }
 
 }
+/* =========================
+   WEATHER × STYLE
+========================= */
+
+.weather-style {
+  padding: 100px 8%;
+  text-align: center;
+  background-color: #f5f0e8;
+}
+
+.weather-label {
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.weather-style h2 {
+  font-family: Georgia, serif;
+  font-size: 48px;
+  font-weight: normal;
+  margin-bottom: 15px;
+}
+
+.weather-intro {
+  margin-bottom: 45px;
+}
+
+.weather-card {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 45px;
+  background: white;
+  border-radius: 20px;
+}
+
+.weather-info {
+  margin-bottom: 40px;
+}
+
+.location {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.temperature {
+  font-family: Georgia, serif;
+  font-size: 55px;
+  margin: 15px 0;
+}
+
+#weather-icon {
+  margin-right: 10px;
+}
+
+.recommendation {
+  border-top: 1px solid #ddd;
+  padding-top: 35px;
+}
+
+.product-card {
+  margin: 30px auto;
+}
+
+.product-placeholder {
+  width: 260px;
+  height: 320px;
+  margin: 0 auto 20px;
+  background: #eee9e1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#product-name {
+  font-family: Georgia, serif;
+  font-size: 25px;
+  margin-bottom: 8px;
+}
+
+#new-outfit {
+  border: 1px solid #333;
+  background: transparent;
+  padding: 14px 28px;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+#new-outfit:hover {
+  background: #333;
+  color: white;
+}
+#product-image {
+    width: 260px;
+    height: 320px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 20px;
+}
