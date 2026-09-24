@@ -1,0 +1,78 @@
+{
+  "location": "Stockholm",
+  "source": "Klart.se",
+  "sourceUrl": "https://www.klart.se/se/stockholms-l%C3%A4n/v%C3%A4der-stockholm/",
+  "updated": "2026-09-24T11:11:33.077Z",
+  "days": [
+    {
+      "day": "Idag",
+      "date": "24 september",
+      "maxTemp": 16,
+      "minTemp": 9,
+      "rain": 0,
+      "rainProbability": 10,
+      "windDirection": "Nordväst",
+      "windSpeed": 4
+    },
+    {
+      "day": "Fredag",
+      "date": "25 september",
+      "maxTemp": 15,
+      "minTemp": 9,
+      "rain": 0.4,
+      "rainProbability": 79,
+      "windDirection": "Nordväst",
+      "windSpeed": 5
+    },
+    {
+      "day": "Lördag",
+      "date": "26 september",
+      "maxTemp": 15,
+      "minTemp": 10,
+      "rain": 0.8,
+      "rainProbability": 100,
+      "windDirection": "Sydväst",
+      "windSpeed": 4
+    },
+    {
+      "day": "Söndag",
+      "date": "27 september",
+      "maxTemp": 16,
+      "minTemp": 8,
+      "rain": 0,
+      "rainProbability": 21,
+      "windDirection": "Sydväst",
+      "windSpeed": 3
+    },
+    {
+      "day": "Måndag",
+      "date": "28 september",
+      "maxTemp": 16,
+      "minTemp": 10,
+      "rain": 0,
+      "rainProbability": 21,
+      "windDirection": "Syd",
+      "windSpeed": 5
+    },
+    {
+      "day": "Tisdag",
+      "date": "29 september",
+      "maxTemp": 19,
+      "minTemp": 11,
+      "rain": 0,
+      "rainProbability": 65,
+      "windDirection": "Syd",
+      "windSpeed": 4
+    },
+    {
+      "day": "Onsdag",
+      "date": "30 september",
+      "maxTemp": 16,
+      "minTemp": 10,
+      "rain": 0.1,
+      "rainProbability": 58,
+      "windDirection": "Ost",
+      "windSpeed": 3
+    }
+  ]
+}

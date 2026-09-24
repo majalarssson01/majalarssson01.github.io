@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Weather Scraping Case | Maja Larsson</title>
+
+  <!-- Din vanliga portfolio CSS ligger en mapp bakåt -->
+  <link rel="stylesheet" href="../style.css">
+
+  <!-- Egen CSS för scraping-sidan -->
+  <link rel="stylesheet" href="scraping.css">
+
+  <!-- Google Tag Manager -->
+  <script>
+    (function(w,d,s,l,i){
+      w[l]=w[l]||[];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event:'gtm.js'
+      });
+
+      var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),
+      dl=l!='dataLayer'?'&l='+l:'';
+
+      j.async=true;
+      j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+
+      f.parentNode.insertBefore(j,f);
+
+    })(window,document,'script','dataLayer','GTM-MZ7253NK');
+  </script>
+  <!-- End Google Tag Manager -->
+
+</head>
+
+
+<body>
+
+  <!-- Google Tag Manager noscript -->
+  <noscript>
+    <iframe
+      src="https://www.googletagmanager.com/ns.html?id=GTM-MZ7253NK"
+      height="0"
+      width="0"
+      style="display:none;visibility:hidden">
+    </iframe>
+  </noscript>
+  <!-- End Google Tag Manager noscript -->
+
+
+  <!-- HEADER -->
+  <header class="scraping-header">
+
+    <!-- Tillbaka till din vanliga portfolio -->
+    <a href="../index.html" class="logo">
+      FALL INSPO
+    </a>
+
+    <nav>
+
+      <a href="../index.html">
+        Home
+      </a>
+
+      <a href="#weather">
+        Weather
+      </a>
+
+      <a href="#process">
+        Process
+      </a>
+
+      <a href="#learning">
+        What I learned
+      </a>
+
+    </nav>
+
+  </header>
+
+
+  <main>
+
+
+    <!-- HERO -->
+    <section class="scraping-hero">
+
+      <p class="eyebrow">
+        SCRAPING CASE
+      </p>
+
+      <h1>
+        Stockholm Weather Scraper
+      </h1>
+
+      <p class="hero-description">
+        A web scraping project that collects the upcoming week's
+        weather forecast for Stockholm.
+      </p>
+
+      <a href="#weather" class="scraping-button">
+        See this week's weather ↓
+      </a>
+
+    </section>
+
+
+
+    <!-- OM PROJEKTET -->
+    <section class="case-section">
+
+      <div class="section-heading">
+
+        <p class="eyebrow">
+          THE IDEA
+        </p>
+
+        <h2>
+          Turning website data into structured information.
+        </h2>
+
+      </div>
+
+
+      <div class="case-text">
+
+        <p>
+          In this project I use Node.js and Cheerio to scrape weather
+          information from Klart.se.
+        </p>
+
+        <p>
+          The scraper collects information about the upcoming week
+          in Stockholm, including maximum temperature, minimum
+          temperature, precipitation and wind.
+        </p>
+
+        <p>
+          The information is then saved as structured JSON data and
+          displayed visually here in my portfolio.
+        </p>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- VÄDER -->
+    <section id="weather" class="weather-section">
+
+      <div class="section-heading">
+
+        <p class="eyebrow">
+          SCRAPED DATA
+        </p>
+
+        <h2>
+          Stockholm – the coming week
+        </h2>
+
+        <p class="weather-intro">
+          Weather data collected from Klart.se
+        </p>
+
+      </div>
+
+
+      <!-- Här lägger JavaScript in väderkorten -->
+      <div id="weather-container" class="weather-grid">
+
+        <p class="loading">
+          Loading weather...
+        </p>
+
+      </div>
+
+
+      <!-- Visar när scrapingen senast kördes -->
+      <p id="updated-time" class="updated-time"></p>
+
+
+      <a
+        href="https://www.klart.se/se/stockholms-l%C3%A4n/v%C3%A4der-stockholm/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="source-link">
+        View original source ↗
+      </a>
+
+    </section>
+
+
+
+    <!-- HUR SCRAPINGEN FUNGERAR -->
+    <section id="process" class="process-section">
+
+      <div class="section-heading">
+
+        <p class="eyebrow">
+          PROCESS
+        </p>
+
+        <h2>
+          How it works
+        </h2>
+
+      </div>
+
+
+      <div class="process-grid">
+
+
+        <article class="process-card">
+
+          <span>
+            01
+          </span>
+
+          <h3>
+            Fetch
+          </h3>
+
+          <p>
+            Node.js downloads the HTML from the Stockholm weather
+            page on Klart.se.
+          </p>
+
+        </article>
+
+
+
+        <article class="process-card">
+
+          <span>
+            02
+          </span>
+
+          <h3>
+            Scrape
+          </h3>
+
+          <p>
+            Cheerio reads the HTML and finds the information that
+            belongs to each day.
+          </p>
+
+        </article>
+
+
+
+        <article class="process-card">
+
+          <span>
+            03
+          </span>
+
+          <h3>
+            Structure
+          </h3>
+
+          <p>
+            The information is converted into structured JavaScript
+            objects containing the weather data.
+          </p>
+
+        </article>
+
+
+
+        <article class="process-card">
+
+          <span>
+            04
+          </span>
+
+          <h3>
+            Save
+          </h3>
+
+          <p>
+            The first seven days of the forecast are saved in a
+            JSON file.
+          </p>
+
+        </article>
+
+
+
+        <article class="process-card">
+
+          <span>
+            05
+          </span>
+
+          <h3>
+            Display
+          </h3>
+
+          <p>
+            The website reads the JSON file and creates the weather
+            cards shown above.
+          </p>
+
+        </article>
+
+
+      </div>
+
+    </section>
+
+
+
+    <!-- VAD JAG LÄRDE MIG -->
+    <section id="learning" class="learning-section">
+
+      <div class="learning-box">
+
+        <p class="eyebrow">
+          WHAT I LEARNED
+        </p>
+
+        <h2>
+          From HTML to useful data.
+        </h2>
+
+        <p>
+          Through this project I learned how web scraping works in
+          practice. I learned how to fetch a webpage, inspect its HTML,
+          extract specific information with Cheerio and turn that
+          information into structured JSON data.
+        </p>
+
+        <p>
+          I also learned how scraped data can be connected to a
+          frontend and presented visually instead of only being shown
+          in the terminal.
+        </p>
+
+      </div>
+
+    </section>
+
+
+  </main>
+
+
+
+  <!-- FOOTER -->
+  <footer class="scraping-footer">
+
+    <p>
+      Scraping Case · Maja Larsson
+    </p>
+
+    <a href="../index.html">
+      ← Back to portfolio
+    </a>
+
+  </footer>
+
+
+  <!-- JavaScript för att visa väderdatan -->
+  <script src="scraping.js"></script>
+
+</body>
+
+</html>
